@@ -1,6 +1,8 @@
 package employee;
 
-import java.util.*;
+import java.util.*;  // Importing package to use java scanner class.
+
+// This is a Main Class .Its has objects of child class.
 
 public class Main {
 
@@ -8,12 +10,16 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		Professor prof = new Professor();
-		Scanner sc = new Scanner(System.in);
-		Assistant_Professer assispro = new Assistant_Professer();
-		Programer programer = new Programer();
-		Associate_Professer associate = new Associate_Professer();
+		// Creating Objects of all Childs Classes.
+		
+		Professor prof = new Professor();                           // object of Professer class.
+		Scanner sc = new Scanner(System.in);                        // object of scanner class.
+		Assistant_Professer assispro = new Assistant_Professer();   // Object of Assistant_Professer class.
+		Programer programer = new Programer();                      // object of programer class.
+		Associate_Professer associate = new Associate_Professer();  // object of Associate_professer class.
 
+		// Using While Loop And sets as true for continnues looping the options till user selects exit.
+		
 		while (true) {
 			System.out.println();
 			System.out.println(" == Choose Your Profession == ");
@@ -24,9 +30,10 @@ public class Main {
 			System.out.println("Enter 4 For Associate Proffesser. ");
 			System.out.println("Enter 5 For Exit ");
 
-			int type = sc.nextInt();
+			int type = sc.nextInt();    // Creating type variable to store the user selescted options.
 
-			if (type == 1) {
+			if (type == 1)    // Professer Field selected.
+			{
 				prof.empName = "Ayush";
 				prof.empId = 1;
 				prof.email_id = "ayush@gmail.com";
@@ -57,7 +64,8 @@ public class Main {
 
 			}
 
-			else if (type == 2) {
+			else if (type == 2)   // Assistant Professer Field Selected.
+			{
 				assispro.empName = "Amit";
 				assispro.empId = 2;
 				assispro.email_id = "amit@gmail.com";
@@ -87,7 +95,8 @@ public class Main {
 
 			}
 
-			else if (type == 3) {
+			else if (type == 3)    // Programer Field Selected.
+			{
 				programer.empName = "shubham";
 				programer.empId = 3;
 				programer.email_id = "shubham@gmail.com";
@@ -117,7 +126,8 @@ public class Main {
 
 			}
 
-			else if (type == 4) {
+			else if (type == 4)  // Associate Professer field Selected.
+			{
 				associate.empName = "shashikant";
 				associate.empId = 4;
 				associate.email_id = "shashi@gmail.com";
@@ -147,11 +157,13 @@ public class Main {
 
 			}
 
-			else if (type == 5) {
+			else if (type == 5)  // Exit Field Selected.
+			{
 				System.out.println("Thanks For Visiting");
 				break;
 
-			} else {
+			} else 
+			{
 				System.out.println("Invalid Proffession Selescted ");
 				
 			}
