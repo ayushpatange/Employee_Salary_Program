@@ -1,6 +1,9 @@
 package employee;
 
+// This is a parent class which has 10 variables and 5 abstract method.
 public abstract class Employee {
+
+	// Variables for Employee.
 	
 	protected String empName;
 	protected int empId;
@@ -14,6 +17,7 @@ public abstract class Employee {
 	protected double Gross_Salary;
 	protected double Net_Salary;
 	
+	// Abstract Method for all of the employee calculations.
 	
 	public abstract double calculateDA();
 	public abstract double calculateHRA();
